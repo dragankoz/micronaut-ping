@@ -1,0 +1,49 @@
+paths:
+  /hello:
+    get:
+      x-amazon-apigateway-integration:
+        uri:
+          Fn::Join:
+            - ""
+            - - "arn:aws:apigateway:"
+              - Ref: AWS::Region
+              - ":lambda:path/2015-03-31/functions/"
+              - Fn::GetAtt: ["HelloFunctionLambdaFunction", "Arn"]
+              - '/invocations'
+        credentials:
+          Fn::GetAtt: ["IamRoleLambdaExecution", "Arn"]
+        passthroughBehavior: "when_no_match"
+        httpMethod: "POST"
+        type: "aws_proxy"
+  /ping:
+    get:
+      x-amazon-apigateway-integration:
+        uri:
+          Fn::Join:
+            - ""
+            - - "arn:aws:apigateway:"
+              - Ref: AWS::Region
+              - ":lambda:path/2015-03-31/functions/"
+              - Fn::GetAtt: ["PingFunctionLambdaFunction", "Arn"]
+              - '/invocations'
+        credentials:
+          Fn::GetAtt: ["IamRoleLambdaExecution", "Arn"]
+        passthroughBehavior: "when_no_match"
+        httpMethod: "POST"
+        type: "aws_proxy"
+  /secret:
+    get:
+      x-amazon-apigateway-integration:
+        uri:
+          Fn::Join:
+            - ""
+            - - "arn:aws:apigateway:"
+              - Ref: AWS::Region
+              - ":lambda:path/2015-03-31/functions/"
+              - Fn::GetAtt: ["SecretFunctionLambdaFunction", "Arn"]
+              - '/invocations'
+        credentials:
+          Fn::GetAtt: ["IamRoleLambdaExecution", "Arn"]
+        passthroughBehavior: "when_no_match"
+        httpMethod: "POST"
+        type: "aws_proxy"

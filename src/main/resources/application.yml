@@ -1,0 +1,6 @@
+micronaut:
+  application:
+    name: micronaut-lambda
+aws:
+  region: ap-southeast-2
+  secretid: TestSecrets

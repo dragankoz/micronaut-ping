@@ -1,0 +1,6 @@
+applicationType: default
+defaultPackage: com.company.example.micronaut
+testFramework: junit
+sourceLanguage: java
+buildTool: maven
+features: [annotation-api, app-name, aws-lambda, aws-lambda-custom-runtime, graalvm, http-client, jackson-databind, java, junit, logback, maven, micronaut-aot, readme, shade, yaml]
