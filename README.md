@@ -32,7 +32,6 @@ You will need to setup some config/credentials for AWS access. This is typically
 *$HOME/.aws/credentials*
 ```
 [default]
-[default]
 aws_access_key_id = AKIAVFCV5QAXXXXXXXXX
 aws_secret_access_key = +PDrJJ0+xhTHSs6TZEvJd/XXXXXXXXXXXXXXXXXX
                                               
