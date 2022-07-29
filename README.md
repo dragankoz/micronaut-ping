@@ -94,7 +94,7 @@ serverless plugin install -n serverless-iam-roles-per-function
 serverless plugin install -n serverless-openapi-integration-helper
 serverless deploy
 ```
-This will build the GraalVM native image inside a docker container and generate the `function.zip` ready for the deployment.
+This will build the GraalVM native image (for windows build - inside a docker container) and generate the `function.zip` ready for the deployment.
 
 
 ## Handler
