@@ -1,6 +1,6 @@
 ## Micronaut Ping Lambda Example
 
-### Micronaut
+### Micronaut reading
 
 - [Deploy a Serverless Micronaut function to AWS Lambda Java 11 Runtime](https://guides.micronaut.io/latest/mn-serverless-function-aws-lambda-maven-java.html)
 - [User Guide](https://docs.micronaut.io/3.5.2/guide/index.html)
