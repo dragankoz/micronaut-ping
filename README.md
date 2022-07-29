@@ -96,6 +96,10 @@ serverless deploy
 ```
 This will build the GraalVM native image (for windows build - inside a docker container) and generate the `function.zip` ready for the deployment.
 
+## Cleanup
+```
+serverless remove
+```
 
 ## Handler
 
