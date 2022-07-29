@@ -37,7 +37,7 @@ aws_secret_access_key = +PDrJJ0+xhTHSs6TZEvJd/XXXXXXXXXXXXXXXXXX
                                               
 ```
 
-### Deploying Serverless (GraalVM / Native)
+### Setup
 Options explained
 For compiling Java down to native executables in Windows, this can be done in 2 ways, using either WSL2 within windows or by indirectly using Docker desktop, which will be invoked during the windows maven build.
 
